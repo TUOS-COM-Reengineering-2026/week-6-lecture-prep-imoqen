@@ -5,9 +5,10 @@ from lecture import randomised_function
 
 class MyTestCase(unittest.TestCase):
 
-    def test_randomised_function(self):
-        self.assertEqual('software', randomised_function())  # This will pass or fail randomly
-        # TODO: Can we make this test deterministic? (HINT: Mock testing)
+    # Commented out and fix is below (lines 13 onwards)
+    #def test_randomised_function(self):
+    #    self.assertEqual('software', randomised_function())  # This will pass or fail randomly
+    #    # TODO: Can we make this test deterministic? (HINT: Mock testing)
 
     # Another solution is to control the randint function instead. So make it return a specific value rather than random.
     # But my solution targets is_small
