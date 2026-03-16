@@ -14,6 +14,15 @@ def is_palindrome(s):
     # HINT: You can use a loop to replace the recursive call.
     # TODO: How do you check if your fix is correct?
 
+def is_palindrome_fixed(s):
+    length = len(s) - 1
+    if length <= 1:
+        return True
+    for i in range (length):
+        if s[i] != s[length - i]:
+            return False
+    return True
+    # can also check if the string reversed = the string. But as Donghwan said, this is unreliable.
 
 # PART 2
 def is_small(a):
